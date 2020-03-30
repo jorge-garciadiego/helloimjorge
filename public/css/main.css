@@ -1,0 +1,192 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   
+}
+
+.mainBody{
+   position: relative;
+   padding-bottom: 100px;
+   min-height: 100vh;
+}
+
+.mainTop{
+   max-width: 1300px;
+   margin: auto;
+}
+
+.navLink{
+   color: inherit;
+   text-decoration: none;
+}
+
+.menu{
+   line-height: 1.4;
+   font-family: Tahoma;
+   background: #00010D;
+   padding: 25px 35px;
+   width: 250px;
+   top: calc(50vh - 300px);
+   position: fixed;
+   margin-left: 5px;
+   border-radius: 17px;
+   box-shadow: 0 0 50px -15px black;
+   transform: scale(0) rotate(359deg);
+   transition: all 0.75s;
+   font-size: 18px;
+}
+
+.menu > ol > li{
+   margin: 20px 0;
+   color: #EBEBF2;
+}
+
+.menu > ol > li:hover{
+   color: #F25244;
+}
+
+.menu > ol > li:first-of-type{
+   color: #D95F5F;
+}
+
+.menu > ol > li > ol{
+   margin: 10px 0 0 20px;
+   border-left: 1px solid #89888C;
+   color: #89888C;
+
+}
+
+.menu > ol > li > ol > li:hover{
+   color: #F25244;
+}
+
+.menu > ol > li > ol > li{
+   margin: 7px 0;
+   padding-left: 20px;
+}
+
+.navTitle{
+   font-family: arial;
+   font-size: 59px;
+   color: #00010D;
+   cursor: pointer;
+   transition: all 0.3s;
+   font-weight: bold;
+}
+
+.navTitle:hover{
+   color: #D9A362;
+}
+
+.menu_active{
+   transform: scale(1) rotate(0deg);
+}
+
+.menuClose{
+   color: #595153;
+   cursor: pointer;
+}
+
+.menuClose:hover{
+   color: #F2F2F2;
+}
+
+
+/** Footer */
+footer{
+   position: absolute;
+   bottom: 0;
+   width: 100vw;
+}
+
+.s-m{
+   height: auto;
+   margin: auto;
+   text-align: center;
+}
+
+.s-m a{
+   display: inline-flex;
+   width: 40px;
+   height: 40px;
+   background: #EBEBF2;
+   color: #595956;
+   margin: 0 6px;
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+   transition: 0.4s;
+   font-size: 20px;
+}
+
+.s-m{
+   margin: 10px;
+}
+
+.s-m a i{
+   transition: 0.2s all;
+}
+
+.s-m a:hover{
+   transform: scale(1.3);
+}
+
+.s-m a:hover > i{
+   transform: scale(1.2);
+}
+
+.footer-menu-one ul{
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+}
+
+.footer-menu-one ul li{
+   display: inline-block;
+   margin: 0px 15px;
+}
+
+.footer-menu-one ul li a{
+   font-family: 'Architects Daughter', cursive;
+   font-size: 18px;
+   font-weight: bolder;
+   color: #D9A362;
+   
+}
+
+.footer-main-div{
+   background: #00010D;
+   padding: 5px;
+}
+
+.footer-menu-one ul li:hover{
+   transform: scale(1.10);
+}
+
+.footer-menu-one ul li{
+   transition: all 0.3s;
+
+   /* at the end of the efect makes an extra movement correct*/
+}
+
+#linkedin:hover{
+   background: #0077B5;
+   color: #EDE9F2;
+}
+
+#instagram:hover{
+   background: #e4405f;
+   color: #EDE9F2;
+}
+
+#twitter:hover{
+   background: #55acee;
+   color: #EDE9F2;
+}
+
+.footer-menu-one ul li a:hover{
+   color: #EDE9F2;
+}

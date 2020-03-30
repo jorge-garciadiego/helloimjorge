@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/form.css">
+
+<section class="contact">
+   <div class="formWrap">
+     <h2 class="formTitle">Contact Us</h2>
+      <form class="userForm" action="/contact-us" method="POST">
+         <input type="text" class="input" id="firstName" name="firstName" placeholder="First Name" value="{{this.actualFirst}}">
+         {{#if this.first}} <br><span class="errorMessage">{{this.first}}</span> {{/if}}
+         <input type="text" class="input" id="lasttName" name="lastName" placeholder="Last Name" value="{{this.actualLast}}">
+         {{#if this.last}} <br><span class="errorMessage">{{this.last}}</span> {{/if}}
+         <input type="text" class="input" id="email" name="email" placeholder="you@domain" value="{{this.actualMail}}">
+          {{#if this.e_mail}} <br><span class="errorMessage">{{this.e_mail}}</span> {{/if}}
+         <input type="text" class="input" id="subject" name="subject" placeholder="Subject">
+        
+         <textarea placeholder="Message" id="message" name="message"></textarea>
+         {{#if this.messageUser}} <br><span class="errorMessage">{{this.messageUser}}</span> {{/if}}
+
+         <div class="errosWrap">
+            {{#each errorMessages}}
+                <div class="errorMsg">{{this.description}}</div>
+            {{/each}}
+         </div>
+
+        <input class="submitForm" id="submitBt" type="submit" value="Contact">
+    </form>
+  </div>
+</section>
