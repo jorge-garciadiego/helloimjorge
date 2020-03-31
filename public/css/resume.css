@@ -1,0 +1,236 @@
+*{
+   margin: 0 auto;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Special Elite', cursive;
+   background: #89888C;
+}
+
+/* The Header*/
+
+.header{
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   font-family: 'Oswald', sans-serif;
+   text-transform: uppercase;
+   font-size: 4rem;
+   color: #0D0D0D;
+}
+
+.borderBar{
+   min-height: 15px;
+   background: #F25244;
+   -webkit-box-shadow: 0 10px 6px -6px #D95F5F;
+	-moz-box-shadow: 0 10px 6px -6px #D95F5F;
+   box-shadow: 3px 10px 10px -5px #D95F5F;
+   border-radius: 0 10px;
+}
+
+.contact{
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+   margin-top: 15px;
+   font-size: 18px;
+}
+
+.contact .icon{
+   font-size: 1.5rem;
+   margin-right: 5px;
+}
+
+/* Social icons/links */
+
+.social{
+   display: grid;
+   grid-template-columns: repeat(13, 1fr);
+   justify-content: center;
+   list-style: none;
+   margin-top: 15px;
+}
+
+.social a{
+   display: inline-flex;
+   text-decoration: none;
+   width: 45px;
+   height: 45px;
+   /*background: #8C8B8B;*/   
+   color: #262626;
+   margin: 0 6px;
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+   transition: 0.4s;
+   font-size: 35px;
+}
+
+.social a i{
+   transition: 0.4s all;
+}
+
+.socialLinkedin{
+   grid-column: 6 / span 1;
+   grid-row: 1;
+}
+
+.socialTwitter{
+   grid-column: 7 / span 1;
+   grid-row: 1;
+}
+
+.socialInstagram{
+   grid-column: 8 / span 1;
+   grid-row: 1;
+}
+
+
+#instagram:hover{
+   background: #e4405f;
+   color: #EDE9F2;
+}
+
+#twitter:hover{
+   background: #55acee;
+   color: #EDE9F2;
+}
+
+#Linkedin:hover{
+   background: #2867b2;
+   color: #EDE9F2;
+}
+
+.social a:hover > i{
+   transform: rotatey(360deg);
+}
+
+/* This is the accordion main section which contains the core parts*/
+.accordion{
+   max-width: 90vw;
+   margin: 20px auto;
+   background: #F2F2F2;
+   border-radius: 10px;
+   -webkit-box-shadow: 0 10px 6px -6px #0D0D0D;
+	-moz-box-shadow: 0 10px 6px -6px #0D0D0D;
+   box-shadow: 8px 10px 10px -5px #0D0D0D;
+  
+}
+
+.accordion .heading{
+   background-color: #595153;
+   padding: 12px 20px;
+   position: relative;
+   cursor: pointer;
+   border-radius: 0 10px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.accordion .accordion-box:last-child .heading{
+   border-bottom: none;
+}
+
+.accordion .heading h3{
+   font-size: 1.5rem;
+   text-align: center;
+   color: #ffffff;
+   margin: 0;
+}
+
+.accordion .heading .fa{
+   color: #fff;
+   position: absolute;
+   right: 20px;
+   top: 30px;
+   margin-top: -15px;
+   height: 30px;
+   width: 30px;
+   font-size: 1.5rem;  
+   cursor: pointer;
+
+}
+
+.accordion .body{
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height .5s ease;
+}
+
+/*Style application to the Work Experience*/
+
+.jobBox{
+   margin-top: 5px;
+   margin-bottom: 15px;
+   margin-right: 10px;
+   margin-left: 10px;
+   padding: 5px;
+   display: grid;
+   align-content: flex-start;
+   -webkit-box-shadow: 0 10px 6px -6px #595153;
+	-moz-box-shadow: 0 10px 6px -6px #595153;
+   box-shadow: 3px 10px 10px -5px #595153;
+   border-radius: 0 10px;
+   line-height: 1.5rem;
+   background: #F2F2F2;
+   
+   grid-row: span 3;
+   grid-column: span 3;
+   
+}
+
+
+/* Grid Container*/
+.experience{
+   margin: auto;
+   max-width: 1150px;
+   margin-top: 10px;
+   display: grid;
+   grid-template-columns: repeat(9, 1fr);
+   grid-template-rows: repeat(8, 1fr);
+   justify-content: center;
+   grid-gap: 5px;
+   grid-auto-flow: dense;
+}
+
+/* Grid Elements */
+
+#imss{
+   grid-column: 4 / 10;
+   grid-row: 1 / 4;
+}
+
+#chalet{
+   grid-column: 1 / 6;
+   grid-row: 7 / 10;;
+}
+
+#fondika{
+   grid-column: 6 / 10;
+}
+
+/* Inside elements */
+
+.specsTitle{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+.description::first-letter{
+   font-size: 75px;
+   padding: 5px;
+   float: left;
+   color: #F25244;
+}
+
+.jobTitle, .jobPlace{
+   text-align: center;
+}
+
+.description{
+   text-align: start;
+   padding: 10px;
+}

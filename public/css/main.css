@@ -1,11 +1,19 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Oswald|Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Major+Mono+Display&family=Special+Elite&display=swap');
+
+
 *{
-   margin: 0;
+   margin: auto 0;
    padding: 0;
    box-sizing: border-box;
    list-style: none;
    text-decoration: none;
-   
+   max-width: 1300px;
+   margin: auto;
+   font-family: 'Major Mono Display', monospace;
 }
+
 
 .mainBody{
    position: relative;
@@ -31,6 +39,7 @@
    width: 250px;
    top: calc(50vh - 300px);
    position: fixed;
+   z-index: 1;
    margin-left: 5px;
    border-radius: 17px;
    box-shadow: 0 0 50px -15px black;
@@ -69,7 +78,6 @@
 }
 
 .navTitle{
-   font-family: arial;
    font-size: 59px;
    color: #00010D;
    cursor: pointer;
@@ -99,7 +107,7 @@
 footer{
    position: absolute;
    bottom: 0;
-   width: 100vw;
+   width: 100%;
 }
 
 .s-m{
@@ -123,7 +131,7 @@ footer{
 }
 
 .s-m{
-   margin: 10px;
+   margin-bottom: 10px;
 }
 
 .s-m a i{
@@ -150,7 +158,6 @@ footer{
 }
 
 .footer-menu-one ul li a{
-   font-family: 'Architects Daughter', cursive;
    font-size: 18px;
    font-weight: bolder;
    color: #D9A362;
