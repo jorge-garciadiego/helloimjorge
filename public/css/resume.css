@@ -38,6 +38,7 @@ body{
 
 .contact{
    display: flex;
+   flex-direction: row;
    justify-content: space-around;
    list-style: none;
    margin-top: 15px;
@@ -239,4 +240,25 @@ body{
 .description{
    text-align: start;
    padding: 10px;
+}
+
+@media (max-width:800px){
+   .experience{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .contact{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .contact li{
+      font-size: 14px;
+   }
+
+   .title, .subtitle{
+      display: flex;
+      font-size: 40px;
+   }
 }

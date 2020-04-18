@@ -10,6 +10,8 @@
          {{#if this.last}} <br><span class="errorMessage">{{this.last}}</span> {{/if}}
          <input type="text" class="input" id="email" name="email" placeholder="you@domain" value="{{this.actualMail}}">
           {{#if this.e_mail}} <br><span class="errorMessage">{{this.e_mail}}</span> {{/if}}
+         <input type="text" class="input" id="phone" name="phone" placeholder="your phone" value="{{this.actualPhone}}">
+          {{#if this.phone}} <br><span class="errorMessage">{{this.phone}}</span> {{/if}}
          <input type="text" class="input" id="subject" name="subject" placeholder="Subject">
         
          <textarea placeholder="Message" id="message" name="message"></textarea>
