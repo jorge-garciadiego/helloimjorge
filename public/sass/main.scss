@@ -1,0 +1,88 @@
+.experience {
+   &__server {
+      company-name: "Mi Taco Taqueria";
+      location: (/Toronto);
+      period: 2019/Sep - present;
+   
+         &__activities {
+   
+         }
+   }  
+   &__barista {
+      company-name: "Coppa's Fresh Market";
+      location: (/Toronto);
+      period: 2019/Apr - 2019/Sep;
+   
+         &__activities {
+   
+         }
+   }  
+   &__dataAnalyst_sr {
+      institution: "Mexican Social Security Institute";
+      location: (../Mexico City);
+      period: 2012/Dec - 2018/Dec;
+   
+         &__activities {
+            $Skills: ["SQL-CRUD operations", "Excel-(Macros, pivot-tables, power-query, power-BI)"];
+            "I performed query and reporting processes in the Institute database to follow up the use of the budget, controlling the excersice of the spending as well as for the elaboration of the budget for each year."
+         }
+   }  
+   &__analyst_jr {
+      company-name: "Daxpro Consulting";
+      location: (../Mexico City);
+      period: 2012/May - 2012/Nov;
+   
+         &__activities {
+   
+         }
+   } 
+   &__analyst_jr {
+      company-name: "Caramel Tech";
+      location: (../Mexico City);
+      period: 2012/Jan - 2012/Apr;
+   
+         &__activities {
+   
+         }
+   }
+   
+}
+
+.education {
+   &__Computer-Programming-and-Analysis {
+      degree: "Diploma";
+      institution: "Seneca College";
+      location: (/Toronto);
+   }
+   &__Economics {
+      degree: "Bachelor";
+      institution: "Instituto Politecnico Nacional";
+      location: (../Mexico City);
+   }
+   &__Policy-and-Management-of-Technological-Change {
+      degree: "Master";
+      institution: "Instituto Politecnico Nacional";
+      location: (../Mexico City);
+   }
+   &__Computational-Finance {
+      degree: "Diploma";
+      institution: "Universidad Anahuac Mexico Norte";
+      location: (../Mexico City);
+   }
+   &__Querying-and-Reporting {
+      degree: "Course";
+      institution: "SAS";
+      location: (../Mexico City);
+   }
+}
+
+.information {
+   city: "Toronto";
+   phone: +1 (647) 528 6151;
+   email: [
+      jgarciadiego-molina@myseneca.ca,
+      me.garciadiego@gmail.com
+   ];
+   github: jorge-garciadiego;
+   linkedin: Jorge Garciadiego;
+}
